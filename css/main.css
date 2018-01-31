@@ -1,4 +1,4 @@
-/* ---------- RESET CSS ---------- */
+/*--RESET CSS-------------------------*/
 
   html, body, div, span, applet, object, iframe,
   h1, h2, h3, h4, h5, h6, p, blockquote, pre,
@@ -46,111 +46,117 @@
   a img {
     border: none;
   }
-/* ---------- END RESET ---------- */
-
-/* -----------GLOBAL STYLES -------*/
-
-body {
-  margin : 1vh 1vw;
-}
-
-/* -----------HEADER STYLES------- */
-
-.header {
-  position: relative;
-}
-
-.header-logo img {
-  height : 7vh;
-}
-.header-nav {
-  list-style: none;
-  padding: 0;
-  text-align: center;
-}
-
-.header-nav a{
-  float :right;
-  margin : 1rem 1rem;
-  text-decoration: none;
-}
-
-/* -----------SOCIAL STYLES------- */
-
-.social-list {
-  list-style: none;
-  padding: 0;
-  text-align: right;
-}
-
-.social-link {
-  display: inline-block;
-  float : right;
-}
-
-/* -----------FOOTER STYLES------- */
-
-.footer {
-  padding : 5vh 5vh;
-  position : relative;
-}
-
-.footer-strap h3 {
-  font-size: 4vw;
-  text-align: center;
-}
+/*--------------------------------END-*/
 
 
-} 
-.copyright p{
-  float: right;
-}
+/*--GLOBAL STYLES---------------------*/
+  
+  body {
+    margin : 1vh 1vw;
+  }
+/*--------------------------------END-*/
 
 
+/*--HEADER STYLES---------------------*/
+
+  .header {
+    position: relative;
+  }
+
+  .header-logo img {
+    height : 7vh;
+  }
+  .header-nav {
+    list-style: none;
+    padding: 0;
+    text-align: center;
+  }
+
+  .header-nav a{
+    float :right;
+    margin : 1rem 1rem;
+    text-decoration: none;
+  }
+/* -------------------------------END-*/
 
 
-/* -----------MAIN PAGE----------- */
+/*--SOCIAL STYLES---------------------*/
+  .social-list {
+    list-style: none;
+    padding: 0;
+    text-align: right;
+  }
+
+  .social-link {
+    display: inline-block;
+    float : right;
+  }
+/* -------------------------------END-*/
 
 
-.callout-title {
-  padding : 1vh 1vw;
-  font-size: 7vw;
-}
+/*--FOOTER STYLES---------------------*/
+  .footer {
+    padding : 5vh 5vh;
+    position : relative;
+  }
 
-.callout-copy {
-   padding : 2vh 8vw;
-   font-size: 3.5vw;
-   font-style: italic;
-   text-align: center;
-}
+  .footer-strap h3 {
+    font-size: 4vw;
+    text-align: center;
+  }
 
-.main-section { 
-   padding : 1vh 2vw;
-}
-.main-section p {
-  margin: 1em 0;
-}
+  .copyright p{
+    float: right;
+  }
+/* -------------------------------END-*/
 
-/* -----------PROJECTS------------ */
-.project {
-  border : 1px solid #000;
-  border-radius: 1vh;
-  margin: 1vh 1vw;
-  padding: 1em 1em;
-}
 
-.project-title {
-  height : 5vh;
-  width : 100%;
-}
+/*--MAIN SECTION STYLES---------------*/
+  .callout-title {
+    padding : 1vh 1vw;
+    font-size: 7vw;
+  }
 
-.project-title h2 {
-  display : inline-block;
-  font-size: 4vw;
-  vertical-align: center;
-}
-.project-title img {
-  display : inline-block;
-  height: 100%;
-  text-align: right;
-}
+  .callout-copy {
+     padding : 2vh 8vw;
+     font-size: 3.5vw;
+     font-style: italic;
+     text-align: center;
+  }
+
+  .main-section { 
+     padding : 1vh 2vw;
+  }
+  .main-section p {
+    margin: 1em 0;
+  }
+/* -------------------------------END-*/
+
+
+/*--PROJECT STYLES--------------------*/
+  .project {
+    border-radius: 1vh;
+    margin: 1vh 1vw;
+    padding: 1em 1em;
+  }
+
+  .project p {
+    text-align: center;
+  }
+  .project-title {
+    height : 5vh;
+    text-align: center;
+    width : 100%;
+  }
+
+  .project-title h2 {
+    display : inline-block;
+    font-size: 4vh;
+    vertical-align: center;
+  }
+  .project-title img {
+    display : inline-block;
+    height: 80%;
+    text-align: right;
+  }
+/* -------------------------------END-*/
