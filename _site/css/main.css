@@ -1,4 +1,4 @@
-/* ---------- RESET CSS ---------- */
+™/*--RESET CSS-------------------------*/
 
   html, body, div, span, applet, object, iframe,
   h1, h2, h3, h4, h5, h6, p, blockquote, pre,
@@ -46,114 +46,143 @@
   a img {
     border: none;
   }
-/* ---------- END RESET ---------- */
-
-/* -----------GLOBAL STYLES -------*/
-
-body {
-  margin : 1vh 1vw;
-}
-
-/* -----------HEADER STYLES------- */
-
-.header {
-  position: relative;
-}
-
-.header-logo img {
-  height : 7vh;
-}
-.header-nav {
-  list-style: none;
-  padding: 0;
-  text-align: center;
-}
-
-.header-nav a{
-  float :right;
-  margin : 1rem 1rem;
-  text-decoration: none;
-}
-
-/* -----------SOCIAL STYLES------- */
-
-.social-list {
-  list-style: none;
-  padding: 0;
-  text-align: right;
-}
-
-.social-link {
-  display: inline-block;
-  float : right;
-}
-
-/* -----------FOOTER STYLES------- */
-
-.footer {
-  padding : 5vh 5vh;
-  position : relative;
-}
-
-.footer-strap h3 {
-  font-size: 4vw;
-  text-align: center;
-}
+/*--------------------------------END-*/
 
 
-} 
-.copyright p{
-  float: right;
-}
+/*--GLOBAL STYLES---------------------*/
+  
+  body {
+    margin : 1vh 1vw;
+  }
+
+  a {
+    text-decoration: none;
+  }
+/*--------------------------------END-*/
 
 
+/*--HEADER STYLES---------------------*/
+
+  .header {
+    position: relative;
+  }
+
+  .header-logo img {
+    height : 7vh;
+  }
+  .header-nav {
+    list-style: none;
+    padding: 0;
+    text-align: center;
+  }
+
+  .header-nav a{
+    float :right;
+    margin : 1rem 1rem;
+    text-decoration: none;
+  }
+/* -------------------------------END-*/
 
 
-/* -----------MAIN PAGE----------- */
+/*--SOCIAL STYLES---------------------*/
+  .social-list {
+    list-style: none;
+    padding: 0;
+    text-align: right;
+  }
+
+  .social-link {
+    display: inline-block;
+    float : right;
+  }
+/* -------------------------------END-*/
 
 
-.callout-title {
-  padding : 1vh 1vw;
-  font-size: 7vw;
-}
+/*--FOOTER STYLES---------------------*/
+  .footer {
+    height: 6vh;
+    margin : 1vh 1vw;
+    padding: 1vh 1vw;
+    position : relative;
+  }
 
-.callout-copy {
-   padding : 2vh 8vw;
-   font-size: 3.5vw;
-   font-style: italic;
-   text-align: center;
-}
+  .in-footer .social-list {
+    display :block;
+    position: absolute;
+    top : 0%;
+    transform: translate(-100%, 50%);
+    left : 100%;
 
-.main-section { 
-   padding : 1vh 2vw;
-}
-.main-section p {
-  margin: 1em 0;
-}
+  }
+  .footer-strap img{
+    height : 5vh;
+  }
 
-/* -----------PROJECTS------------ */
-.project {
-  border-radius: 1vh;
-  margin: 1vh 1vw;
-  padding: 1em 1em;
-}
+  .footer-strap h3 {
 
-.project p {
-  text-align: center;
-}
-.project-title {
-  height : 5vh;
-  text-align: center;
-  width : 100%;
-}
+    font-size: 4vw;
+    position: absolute;
+    top : 50%;
+    left : 50%;
+    transform: translate(-50%, -50%)
+  }
 
-.project-title h2 {
-  display : inline-block;
-  font-size: 4vh;
-  vertical-align: center;
-}
-.project-title img {
-  display : inline-block;
-  height: 80%;
-  text-align: right;
-}
+  .copyright p {
+    display :block;
+    font-size: 1.5vw;
+    position: absolute;
+    top : 100%;
+    transform: translate(-100%, -100%);
+    left : 100%;
+
+  }
+/* -------------------------------END-*/
+
+
+/*--MAIN SECTION STYLES---------------*/
+  .callout-title {
+    padding : 1vh 1vw;
+    font-size: 7vw;
+  }
+
+  .callout-copy {
+     padding : 2vh 8vw;
+     font-size: 3.5vw;
+     font-style: italic;
+     text-align: center;
+  }
+
+  .main-section { 
+     padding : 1vh 2vw;
+  }
+  .main-section p {
+    margin: 1em 0;
+  }
+/* -------------------------------END-*/
+
+
+/*--PROJECT STYLES--------------------*/
+  .project {
+    margin: 1vh 1vw 0;
+    padding: 1em 1em;
+  }
+
+  .project p {
+    text-align: center;
+  }
+  .project-title {
+    height : 3vh;
+    text-align: center;
+    width : 100%;
+  }
+
+  .project-title h2 {
+    display : inline-block;
+    font-size: 4vh;
+    vertical-align: top;
+  }
+  .project-title img {
+    display : inline-block;
+    height: 4vh;
+  }
+/* -------------------------------END-*/

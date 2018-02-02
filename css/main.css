@@ -1,4 +1,4 @@
-/*--RESET CSS-------------------------*/
+™/*--RESET CSS-------------------------*/
 
   html, body, div, span, applet, object, iframe,
   h1, h2, h3, h4, h5, h6, p, blockquote, pre,
@@ -54,6 +54,10 @@
   body {
     margin : 1vh 1vw;
   }
+
+  a {
+    text-decoration: none;
+  }
 /*--------------------------------END-*/
 
 
@@ -96,17 +100,41 @@
 
 /*--FOOTER STYLES---------------------*/
   .footer {
-    padding : 5vh 5vh;
+    height: 6vh;
+    margin : 1vh 1vw;
+    padding: 1vh 1vw;
     position : relative;
   }
 
-  .footer-strap h3 {
-    font-size: 4vw;
-    text-align: center;
+  .in-footer .social-list {
+    display :block;
+    position: absolute;
+    top : 0%;
+    transform: translate(-100%, 50%);
+    left : 100%;
+
+  }
+  .footer-strap img{
+    height : 5vh;
   }
 
-  .copyright p{
-    float: right;
+  .footer-strap h3 {
+
+    font-size: 4vw;
+    position: absolute;
+    top : 50%;
+    left : 50%;
+    transform: translate(-50%, -50%)
+  }
+
+  .copyright p {
+    display :block;
+    font-size: 1.5vw;
+    position: absolute;
+    top : 100%;
+    transform: translate(-100%, -100%);
+    left : 100%;
+
   }
 /* -------------------------------END-*/
 
@@ -135,8 +163,7 @@
 
 /*--PROJECT STYLES--------------------*/
   .project {
-    border-radius: 1vh;
-    margin: 1vh 1vw;
+    margin: 1vh 1vw 0;
     padding: 1em 1em;
   }
 
@@ -144,7 +171,7 @@
     text-align: center;
   }
   .project-title {
-    height : 5vh;
+    height : 3vh;
     text-align: center;
     width : 100%;
   }
@@ -152,11 +179,10 @@
   .project-title h2 {
     display : inline-block;
     font-size: 4vh;
-    vertical-align: center;
+    vertical-align: top;
   }
   .project-title img {
     display : inline-block;
-    height: 80%;
-    text-align: right;
+    height: 4vh;
   }
 /* -------------------------------END-*/
