@@ -189,34 +189,49 @@
   }
 
   .main-section { 
-     padding : 1vh 2vw;
+     padding : 1vh 4vw;
   }
   .main-section p {
-    color: #000;
     line-height: 1.5; 
     margin: 1em 0;
   }
 /* -------------------------------END-*/
 
 /*--PROJECT STYLES--------------------*/
+
+  .main-section-projects {
+    align-content: flex-start; 
+    display: flex;
+    flex-direction: column;
+    margin: 0 4vw;
+  }
+
+  .main-section-projects p {
+    line-height: 1.5; 
+    margin: 1em 0;
+  }
+
   .project {
+    flex-grow: 1;
+    flex-basis: 33%;
     margin: 0 1vw;
-    padding: 1em 1em;
+/*    padding: 1em 1em;*/
     text-align: center;
   }
 
+
   .project-title {
-    height : 3vh;
-    width : 100%;
+    margin: 2vh auto 0;
   }
 
   .project-title h2 {
     display : inline-block;
     font-size: 4vh;
-    vertical-align: top;
+/*    vertical-align: top;*/
   }
   .project-title img {
     display : inline-block;
     height: 4vh;
+    vertical-align: top;
   }
 /* -------------------------------END-*/
