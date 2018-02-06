@@ -54,14 +54,14 @@
     display : flex;
     flex-direction: column;
     font-family: 'Ubuntu', sans-serif;
-    margin: 0 auto;
-    max-width: 960px;
+/*    margin: 0 auto;
+    max-width: 960px;*/
     min-height: 100vh;
   }
 
   .content-container {
       flex-grow: 1;
-      padding-top: 10vh;
+      padding-top: 70px;
       width: 100%;
     }
 
@@ -74,7 +74,7 @@
 
   .header {
     background-color: #fff;
-    max-width: 960px;
+/*    max-width: 960px;*/
     position: fixed;
     width: 100%; 
     z-index: 20;
@@ -131,7 +131,7 @@
   }
 
   .footer-strap h3 {
-    font-size: 3vh;
+    font-size: 2.5vh;
     line-height: 5vh;
     opacity: 0.9;
     padding: 0.5vw 0.5vw;
@@ -147,25 +147,40 @@
 /* -------------------------------END-*/
 
 /*--MAIN SECTION STYLES---------------*/
+
+  .callout-section {
+    align-items: flex-start;
+    display: flex;
+    width : 75%;
+    margin : 2vh auto 2vh;
+    padding: 1vh 2vw;
+  }
  
   .callout-title {
-    font-size: 5vw;
-    padding: 2vh 2vw 3vh;
+    flex-grow: 1;
+    flex-basis: 50%;
+    font-size: 9vh;
+/*    padding: 0 2vw 3vh;*/
+    line-height: 0.85;
+    text-align: right;
   }
 
   .callout-copy {
-     padding : 2vh 5.5vw;
-     font-size: 5vh;
+/*     padding : 0 2vw 2vh;*/
+     flex-shrink: 0;
+     flex-basis: 50%;
+     font-size: 3vh;
      font-style: bold italic;
-     text-align: center;
+     line-height: 1.25;
+     text-align: left;
      opacity: 0.7;
   }
 
   .callout-copy img {
     display: inline;
-    height : 8vh;
+    height : 7vh;
     opacity: 1;
-    vertical-align: middle;
+    vertical-align: top;
   }
 
   .main-section { 
