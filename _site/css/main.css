@@ -49,28 +49,24 @@
 /*--------------------------------END-*/
 
 /*--GLOBAL STYLES---------------------*/
-  HTML {
-    background: #000;
-  }
 
   body {
-    font-family: helvetica, arial, sans;
-    margin: 1vh auto;
+    font-family: 'Ubuntu', sans-serif;
+    margin: 0 auto;
     max-width: 960px;
   }
 
   a {
     text-decoration: none;
   }
-
 /*--------------------------------END-*/
 
 /*--HEADER STYLES---------------------*/
 
   .header {
-    background: #000;
-    overflow: hidden;
-    width :100%;
+    max-width: 960px;
+    margin-top: 2vh;
+    width: 100%; 
   }
 
   .header:after {
@@ -82,94 +78,90 @@
     height: 0;
   }
 
-  .header-logo img {
-    height : 10vh;
-    margin: 0 2vw;
-    min-height: 40px;
-  }
-
   .nav-links {
     display: inline-block;
     float: right;
     line-height: 1;
-    margin: 3vh 2vw 3vh;
+    margin: 2vh 2vw;
   }
 
   .header-nav > li{
     display: inline-block;
     font-size: 1.25rem;
-    padding : 0 0.5em;
+    padding : 0.25em 0.5em;
   }
 
   /* place divider between li's and pad */
 
   .header-nav > li ~ li {
-  border-left: 1px solid rgba(255, 255, 255, 0.3);
+  border-left: 1px solid rgba(0, 0, 0, 0.7);
   }
 /* -------------------------------END-*/
 
 /*--SOCIAL STYLES---------------------*/
   .social-list {
     list-style: none;
+    height: 5vh;
   }
 
   .social-list > li {
-    font-size: 1 rem;
+    display: block;
     float : right;
+    height : 50px;
+    padding : 0 0.5vw;
   }
 /* -------------------------------END-*/
 
 /*--FOOTER STYLES---------------------*/
   .footer {
-    padding: 1vh 1vw;
     overflow: hidden;
+    padding : 1vh 2vw 2vh;
     position : relative;
   }
 
-  .in-footer .social-list {
-    position: absolute;
-    top : 100%;
-    left : 100%;
-  }
-  .footer-strap img{
-    display: block;
-    height : 5vh;
-    padding: 1vh 0.5vw;
-  }
-
   .footer-strap h3 {
-    font-size: 3vh;
+    font-size: 3.5vh;
+    line-height: 5vh;
+    opacity: 0.9;
+    padding: 0.5vw 0.5vw;
     position: absolute;
     top : 50%;
     left : 50%;
     transform: translate(-50%, -50%)
   }
+
+  .footer-strap img {
+    height : 100%;
+  }
 /* -------------------------------END-*/
 
 /*--MAIN SECTION STYLES---------------*/
  
-  .content-wrapper {
-    background-color: #ddd;
-    border :  2vw solid #000;
-    border-radius: 5vh;
-  }
-
   .callout-title {
-    padding : 2vh 2vw 1vh;
-    font-size: 5.5vw;
+    font-size: 6vw;
+    padding: 0vh 2vw 2vh;
   }
 
   .callout-copy {
-     padding : 2vh 6vw;
-     font-size: 3.25vw;
-     font-style: italic;
+     padding : 2vh 5.5vw;
+     font-size: 5vh;
+     font-style: bold italic;
      text-align: center;
+     opacity: 0.7;
+  }
+
+  .callout-copy img {
+    display: inline;
+    height : 8vh;
+    opacity: 1;
+    vertical-align: middle;
   }
 
   .main-section { 
      padding : 1vh 2vw;
   }
   .main-section p {
+    color: #000;
     line-height: 1.5; 
     margin: 1em 0;
   }
@@ -194,6 +186,6 @@
   }
   .project-title img {
     display : inline-block;
-    height: 3vh;
+    height: 4vh;
   }
 /* -------------------------------END-*/
