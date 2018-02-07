@@ -51,11 +51,12 @@
 /*--GLOBAL STYLES---------------------*/
 
   body {
+
     display : flex;
     flex-direction: column;
     font-family: 'Ubuntu', sans-serif;
-/*    margin: 0 auto;
-    max-width: 960px;*/
+    margin: 0 auto;
+    max-width: 960px;
     min-height: 100vh;
   }
 
@@ -74,8 +75,8 @@
 
   .header {
     background-color: #fff;
-/*    max-width: 960px;*/
     position: fixed;
+    max-width: 960px;
     width: 100%; 
     z-index: 20;
   }
@@ -98,7 +99,7 @@
 
   .header-nav > li{
     display: inline-block;
-    font-size: 1rem;
+    font-size: 0.95rem;
     padding : 0.25em 0.5em;
   }
 
@@ -112,11 +113,10 @@
 /*--SOCIAL STYLES---------------------*/
   .social-list {
     list-style: none;
-    height: 5vh;
   }
 
   .social-list > li {
-    display: block;
+    display: inline-block;
     float : right;
     height : 30px;
     padding : 0 0.5vw;
@@ -125,16 +125,15 @@
 
 /*--FOOTER STYLES---------------------*/
   .footer {
-    overflow: hidden;
-    padding : 1vh 2vw 3vh;
+    padding : 0 2vw;
     position : relative;
+    margin-bottom: 4vh;
   }
 
   .footer-strap h3 {
-    font-size: 2.5vh;
-    line-height: 5vh;
+    font-size: 2.25vh;
     opacity: 0.9;
-    padding: 0.5vw 0.5vw;
+    text-align: center;
     position: absolute;
     top : 50%;
     left : 50%;
@@ -142,7 +141,10 @@
   }
 
   .footer-strap img {
-    height : 100%;
+    display: inline-block;
+    height : 80%;
+    vertical-align: center;
+
   }
 /* -------------------------------END-*/
 
@@ -150,13 +152,11 @@
 
   .callout-section {
     align-items: flex-start;
- /*   background : rgba(0,0,0,0.1);*/
-/*    border-radius: 5px;
-    box-shadow: 0px 2px 4px 0px rgba(0,0,0,1);*/
     display: flex;
+    margin : 2vh auto 3vh;
+    max-width: 900px;
+    padding: 0 2vw;
     width : 60vw;
-    margin : 2vh auto 2vh;
-    padding: 1vh 2vw;
   }
  
   .callout-title {
@@ -202,7 +202,7 @@
   .main-section-projects {
     align-content: flex-start; 
     display: flex;
-    flex-direction: column;
+    flex-direction: wrap;
     margin: 0 4vw;
   }
 
@@ -213,15 +213,13 @@
 
   .project {
     flex-grow: 1;
-    flex-basis: 33%;
+    flex-basis: auto;
     margin: 0 1vw;
-/*    padding: 1em 1em;*/
-    text-align: center;
   }
 
 
   .project-title {
-    margin: 2vh auto 0;
+    margin: 1vh auto 0;
   }
 
   .project-title h2 {
