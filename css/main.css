@@ -119,7 +119,7 @@
     display: inline-block;
     float : right;
     height : 30px;
-    padding : 0 0.5vw;
+    padding : 0 0.25vw;
   }
 /* -------------------------------END-*/
 
@@ -131,7 +131,7 @@
   }
 
   .footer-strap h3 {
-    font-size: 2.25vh;
+    font-size: 2vh;
     opacity: 0.9;
     text-align: center;
     position: absolute;
