@@ -202,24 +202,24 @@
   .main-section-projects {
     align-content: flex-start; 
     display: flex;
-    flex-direction: wrap;
+    flex-direction: column;
     margin: 0 4vw;
   }
 
   .main-section-projects p {
     line-height: 1.5; 
-    margin: 1em 0;
+    margin: 0 0 1em;
   }
 
   .project {
     flex-grow: 1;
     flex-basis: auto;
-    margin: 0 1vw;
+    margin: 0 1vw 1vh;
   }
 
 
   .project-title {
-    margin: 1vh auto 0;
+/*    margin: 1vh auto 0;*/
   }
 
   .project-title h2 {
