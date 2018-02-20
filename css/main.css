@@ -67,21 +67,6 @@
       width: 100%;
     }
 
-
-  .centre-flex {
-    display: flex;
-    flex-direction: column;
-  }  
-
-
-  .top-third {
-
-    flex-grow: 1;
-  }
-
-  .bottom-two-thirds {
-    flex-grow: 3;
-  }
   a {
     text-decoration: none;
   }
@@ -155,6 +140,8 @@
     font-size: 2vh;
     opacity: 0.9;
     text-align: center;
+    padding-top: 1em;
+    padding-bottom: 1em;
     position: absolute;
     top : 50%;
     left : 50%;
@@ -164,20 +151,17 @@
   .footer-strap img {
     display: inline-block;
     height : 80%;
-    vertical-align: center;
-
   }
 /*--------------------------------END-*/
 
 /*--CALLOUT SECTION STYLES------------*/
   .callout-section {
-    align-items: flex-start;
+    align-items: stretch;
     display: flex;
     margin : 0 auto;
     max-width: 800px;
     overflow: hidden;
     padding: 10vh 15vw 5vh;
-/*    width : 60vw;*/
   }
  
   .callout-title {
@@ -192,7 +176,7 @@
   .callout-copy {
     flex-grow: 1;
    flex-basis: 40vw;
-   font-size: 2.5vw;
+   font-size: 2.25vw;
    font-style: bold italic;
    line-height: 1.25;
    padding-left: 1vw;
@@ -211,27 +195,22 @@
 /*--MAIN SECTION STYLES---------------*/
 
   .main-section { 
-    display :flex;
-    flex-direction: column;
-    align-items: stretch;
     padding : 2vh 4vw;
   }
-  .main-section p {
-    flex-grow: 1;
-  }
+
 /*--------------------------------END-*/
 
 /*--PROJECT STYLES--------------------*/
 
   .main-section-projects {
+    align-items: flex-start;
     display: flex;
-    flex-direction: column-reverse; 
+    flex-direction: row-reverse; 
     margin: 0 4vw;
   }
 
   .project {
-    flex-grow: 1;
-    flex-basis: auto;
+    flex :1;
     margin: 0 1vw 1vh;
   }
 
@@ -245,3 +224,50 @@
     vertical-align: top;
   }
 /*--------------------------------END-*/
+
+/*--MOBILE--------------------*/
+
+@media (max-width: 600px){
+
+
+/*--CALLOUT SECTION STYLES------------*/
+
+  .callout-section {
+    padding: 10vh 5vw 5vh;
+  }
+
+  .callout-title {
+    flex-grow: 1;
+    flex-basis: 35vw;
+    font-size: 9vw;
+  }
+  .callout-copy {
+    flex-grow: 1;
+    flex-basis: 55vw;
+    font-size: 4.5vw;
+  }
+
+
+/*---PROJECT STYLES-------------------*/
+
+  .main-section-projects {
+    flex-direction: column-reverse;
+  }
+
+/*--FOOTER STYLES---------------------*/
+
+
+  .footer-strap h3 {
+    display: block;
+    font-size: 4.5vw;
+    opacity: 0.9;
+    text-align: center;
+    padding-top: 1em;
+    padding-bottom: 1em;
+  }
+
+/*--------------------------------END-*/
+
+
+}
+
