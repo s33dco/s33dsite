@@ -137,8 +137,8 @@
   }
 
   .footer-strap h3 {
-    font-size: 2vh;
-    opacity: 0.9;
+    font-size: 2vw;
+    opacity: 0.7;
     text-align: center;
     padding-top: 1em;
     padding-bottom: 1em;
@@ -298,7 +298,9 @@
     opacity: 1;
     vertical-align: text-top;
   }
-
+  .footer-strap h3 {
+    font-size: 1.5vw;
+  }
 }
 
 @media (min-width: 1600px) {
@@ -317,7 +319,9 @@
     opacity: 1;
     vertical-align: text-top;
   }
-
+  .footer-strap h3 {
+    font-size: 1vw;
+  }
 }
 
 @media (min-width: 1800px) {
@@ -343,4 +347,7 @@
     vertical-align: text-top;
   }
 
+  .footer-strap h3 {
+    font-size: 1.5em;
+  }
 }
