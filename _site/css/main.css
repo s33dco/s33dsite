@@ -227,7 +227,7 @@
 
 /*--MOBILE--------------------*/
 
-@media (max-width: 600px){
+@media (max-width: 680px){
 
 
 /*--CALLOUT SECTION STYLES------------*/
@@ -260,7 +260,6 @@
   .footer-strap h3 {
     display: block;
     font-size: 4.5vw;
-    opacity: 0.9;
     text-align: center;
     padding-top: 1em;
     padding-bottom: 0;
@@ -275,8 +274,8 @@
   .social-list > li {
     display: inline-block;
     float : none;
-    height : 30px;
-    padding : 0;
+    height : 35px;
+    padding : 0 0.5em;
   }
 /*--------------------------------END-*/
 
