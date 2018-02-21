@@ -263,9 +263,21 @@
     opacity: 0.9;
     text-align: center;
     padding-top: 1em;
-    padding-bottom: 1em;
+    padding-bottom: 0;
+    position: relative;
   }
 
+  ul.in-footer.social-list {
+    margin-top: -0.5em;
+    text-align: center;
+  }
+
+  .social-list > li {
+    display: inline-block;
+    float : none;
+    height : 30px;
+    padding : 0;
+  }
 /*--------------------------------END-*/
 
 
