@@ -1,18 +1,25 @@
 <head>
-	<!-- page.name is set to "home" -->
-{% case page.url %}
-  {% when '/' %}
-    <title>home of s33d</title>
-  {% when '/projects/' %}
-    <title>s33d projects</title>
-  {% when '/contact/' %}
-    <title>contact s33d</title>
+  {% if page.title %}
+    <title>{{ page.title }} | s33d</title>
   {% else %}
     <title>s33d</title>
-{% endcase %}
+  {% endif %}
+  {% if page.description %}
+    <meta name="description" content="{{ page.description }}">
+  {% else %}
+    <meta name="description" content="develop and grow with s33d.">
+  {% endif %}
 
+    <meta property="og:title" content="{{ page.title }} | s33d" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="{{ page.url }}" />
+    <meta property="og:image" content="{{ site.url }}/apple-touch-icon.png"/>
+
+
+    <link href="/favicon.png" rel="icon">
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png">
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu:300i,500" rel="stylesheet">
     <link rel="stylesheet" href="/css/main.css">
-    <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
 </head>

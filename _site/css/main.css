@@ -60,6 +60,10 @@
     min-height: 100vh;
   }
 
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Ubuntu', sans-serif;
+  }
+
   /*only flex grow on content container, not footer or fixed header makes the content container grow and sticks footer to bottom of viewport window*/
 
   .content-container {
@@ -138,6 +142,7 @@
 
   .footer-strap h3 {
     font-size: 2vw;
+    font-style: italic;
     opacity: 0.7;
     text-align: center;
     padding-top: 1em;
@@ -177,7 +182,7 @@
     flex-grow: 1;
    flex-basis: 40vw;
    font-size: 2.25vw;
-   font-style: bold italic;
+   font-style: italic;
    line-height: 1.25;
    padding-left: 1vw;
    text-align: left;
@@ -225,71 +230,80 @@
   }
 /*--------------------------------END-*/
 
-/*--MOBILE--------------------*/
-
-@media (max-width: 680px){
+/*--RWD--------------------*/
 
 
-/*--CALLOUT SECTION STYLES------------*/
 
+/* mobile portrait */
+@media (max-width: 450px){
   .callout-section {
-    padding: 10vh 5vw 5vh;
+    padding: 8vh 2vw 2vh;
   }
-
   .callout-title {
     flex-grow: 1;
     flex-basis: 35vw;
-    font-size: 9vw;
+    font-size: 8vw;
   }
   .callout-copy {
     flex-grow: 1;
     flex-basis: 55vw;
-    font-size: 4.5vw;
+    font-size: 4vw;
   }
-
-
-/*---PROJECT STYLES-------------------*/
-
   .main-section-projects {
     flex-direction: column-reverse;
   }
-
-/*--FOOTER STYLES---------------------*/
-
-
   .footer-strap h3 {
     display: block;
-    font-size: 4.5vw;
+    font-size: 4vw;
     text-align: center;
     padding-top: 1em;
     padding-bottom: 0;
     position: relative;
   }
-
   ul.in-footer.social-list {
     margin-top: -0.5em;
     text-align: center;
   }
-
   .social-list > li {
     display: inline-block;
     float : none;
     height : 35px;
     padding : 0 0.5em;
   }
-/*--------------------------------END-*/
-
 }
-
+/* mobile landscape */
+@media (max-width: 800px){
+  .main-section-projects {
+    flex-direction: column-reverse;
+  }
+  .footer-strap h3 {
+    display: block;
+    font-size: 2.25vw;
+    text-align: center;
+    padding-top: 1em;
+    padding-bottom: 0;
+    position: relative;
+  }
+  ul.in-footer.social-list {
+    margin-top: -0.5em;
+    text-align: center;
+  }
+  .social-list > li {
+    display: inline-block;
+    float : none;
+    height : 35px;
+    padding : 0 0.5em;
+  }
+}
 /* large displays*/
-@media (min-width: 1200px) {
+@media (min-width: 1400px) {
 
   .callout-title {
     font-size: 3vw;
   }
 
   .callout-copy {
-   font-size: 1.5vw;
+   font-size: 1.25vw;
   }
 
   .callout-copy img {
@@ -299,35 +313,12 @@
     vertical-align: text-top;
   }
   .footer-strap h3 {
-    font-size: 1.5vw;
+    font-size: 1.25vw;
   }
 }
-
 @media (min-width: 1600px) {
-
-  .callout-title {
-    font-size: 2.5vw;
-  }
-
-  .callout-copy {
-   font-size: 1vw;
-  }
-
-  .callout-copy img {
-    display: inline;
-    height : 6vh;
-    opacity: 1;
-    vertical-align: text-top;
-  }
-  .footer-strap h3 {
-    font-size: 1vw;
-  }
-}
-
-@media (min-width: 1800px) {
-
   .callout-section {
-    padding: 8vh 4vw 5vh;
+    padding: 8vh 10vw 5vh;
   }
 
   .callout-title {
@@ -336,7 +327,7 @@
   }
 
   .callout-copy {
-   font-size: 1.5em;
+   font-size: 1.25em;
    padding-left: 0.25vw;
   }
 
