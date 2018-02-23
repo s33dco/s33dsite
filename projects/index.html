@@ -1,50 +1,53 @@
 ---
 layout: default
-title: projects
-description: 
+title: Projects
+description: Hand coded with heart
 ---
+<div class="callout-section">
+	<div class="callout-title">
+		<h1>Projects</h1>
+	</div>
+
+	<div class="callout-copy">
+		<h1>We love new projects, here's some we prepared earlier.</h1>
+	</div>
+</div>
 
 
-
-			<div class="callout-section">
-				<div class="callout-title">
-					<h1>Projects</h1>
-				</div>
-
-				<div class="callout-copy">
-					<h1>We love new projects, here's some we prepared earlier.</h1>
-				</div>
+<div class="main-section-projects">
+	{% for project in site.posts %}
+		<div class="project">
+			<div class="project-title">
+				<h2>
+					<a href="{{ project.url}}">{{ project.title }}</a>
+						<span class="links">
+							<img src="{{ project.langicon }}" alt="{{ project.title }} is written in {{ project.lang }}" >
+								<img"/images/gems.png" alt="{{ project.title }} available as a Ruby Gem"/>
+						{% if project.gem %}
+							<a href="{{ project.gem}}">
+								<img src="/images/gems.png" alt="{{ project.title }} available as a Ruby Gem"/>
+							</a>
+						{% endif %}
+						{% if project.repo %}
+							<a href="{{ project.repo}}">
+								<img src="/images/github.png" alt="{{ project.title }} source code available on GitHub"/>
+							</a>
+						{% endif %}
+						{% if project.site %}
+							<a href="{{ project.site}}">
+								<img src="/images/github.png" alt="{{ project.title }} source code available on GitHub"/>
+							</a>
+						{% endif %}
+						</span>
+				</h2>
+			</div>
+			<div class="excerpt">
+				{{ project.excerpt }}
 			</div>
 
-		
-
-
-			<div class="main-section-projects">
-
-				<div class="project">
-					<div class="project-title">
-						<h2>Banco</h2>
-						<img src="/images/ruby.png">
-					</div>
-					<p>A bank statement analyizer run from the command line or bundled into your rails app. Banco imports a .CSV file and outputs a summary of the transactions in an easy to understand format. Written in Ruby with no third party dependencies. Available as a <a href="https://rubygems.org/gems/banco">gem</a> or you can clone the <a href="https://github.com/s33dco/banco">code</a>. Open Source and free to use.</p>
-				</div>
-
-				<div class="project">
-					<div class="project-title">
-						<h2>Coop</h2>
-						<img src="/images/rails.png">
-					</div>
-					<p>A website and admin tool to take the stress out of managing Housing Coops. <a href="https://rubygems.org/gems/banco">Check out</a> the app but <a href="/contact/">drop us a line</a> first for a log in. The code for this Open Source project is available on <a href="https://github.com/s33dco/housing-coop">GitHub.</a> We're always up for writing new features and customzing to your needs, just <a href="/contact/">let us know</a> what you need.</p>
-				</div>
-
-				<div class="project">
-					<div class="project-title">
-						<h2>Bazaar</h2>
-						<img src="/images/rails.png">
-					</div>
-					<p>A website and admin tool to take the stress out of managing Housing Coops. <a href="https://rubygems.org/gems/banco">Check out</a> the app but <a href="/contact/">drop us a line</a> first for a log in. The code for this Open Source project is available on <a href="https://github.com/s33dco/housing-coop">GitHub.</a> We're always up for writing new features and customzing to your needs, just <a href="/contact/">let us know</a> what you need.</p>
-				</div>
-			</div>
+		</div>
+	{% endfor %}
+</div>
 
 
 

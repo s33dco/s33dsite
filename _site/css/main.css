@@ -142,11 +142,9 @@
 
   .footer-strap h3 {
     font-size: 2vw;
-    font-style: italic;
     opacity: 0.7;
     text-align: center;
-    padding-top: 1em;
-    padding-bottom: 1em;
+    padding: 1em;
     position: absolute;
     top : 50%;
     left : 50%;
@@ -166,7 +164,7 @@
     margin : 0 auto;
     max-width: 800px;
     overflow: hidden;
-    padding: 10vh 15vw 5vh;
+    padding: 15vh 15vw 5vh;
   }
  
   .callout-title {
@@ -200,34 +198,48 @@
 /*--MAIN SECTION STYLES---------------*/
 
   .main-section { 
-    padding : 2vh 4vw;
+    margin: 0 10vw;
   }
 
 /*--------------------------------END-*/
 
-/*--PROJECT STYLES--------------------*/
+/*--PROJECT INDEX--------------------*/
 
-  .main-section-projects {
+  .main-section-projects{
     align-items: flex-start;
     display: flex;
-    flex-direction: row-reverse; 
-    margin: 0 4vw;
+    flex-direction: row; 
+    margin: 0 10vw;
   }
 
   .project {
     flex :1;
-    margin: 0 1vw 1vh;
+    margin: 4vh 1vw 0;
   }
 
   .project-title h2 {
     display : inline-block;
     font-size: 4vh;
   }
-  .project-title img {
+  .project .links {
     display : inline-block;
     height: 4vh;
+  }
+
+  .project .links img {
+    display : inline-block;
+    height: 100%;
     vertical-align: top;
   }
+
+  .project-text p:first-child {
+    display: none;
+  }
+
+/*--------------------------------END-*/
+
+/*--PROJECT PAGE----------------------*/
+
 /*--------------------------------END-*/
 
 /*--RWD--------------------*/
@@ -250,11 +262,32 @@
     font-size: 4vw;
   }
   .main-section-projects {
-    flex-direction: column-reverse;
+    flex-direction: column;
+  }
+/*  .project-title {
+    text-align: center;
+  }*/
+  .project-title h2 {
+    display : inline-block;
+    font-size: 4vh;
+  }
+  .project .links {
+    display : inline-block;
+    height: 4vh;
+  }
+
+  .project .links img {
+    display : inline-block;
+    height: 100%;
+    vertical-align: top;
+  }
+
+  p {
+    font-size: 1.1em;
   }
   .footer-strap h3 {
     display: block;
-    font-size: 4vw;
+    font-size: 6vw;
     text-align: center;
     padding-top: 1em;
     padding-bottom: 0;
@@ -274,7 +307,7 @@
 /* mobile landscape */
 @media (max-width: 800px){
   .main-section-projects {
-    flex-direction: column-reverse;
+    flex-direction: column;
   }
   .footer-strap h3 {
     display: block;
@@ -293,6 +326,20 @@
     float : none;
     height : 35px;
     padding : 0 0.5em;
+  }
+  .project-title h2 {
+    display : inline-block;
+    font-size: 3.5vh;
+  }
+  .project .links {
+    display : inline-block;
+    height: 3.5vh;
+  }
+
+  .project .links img {
+    display : inline-block;
+    height: 100%;
+    vertical-align: top;
   }
 }
 /* large displays*/
