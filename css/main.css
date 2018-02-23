@@ -236,6 +236,27 @@
     display: none;
   }
 
+  .project-nav {
+   font-size: 1.5vw;
+   font-style: italic;
+   margin:  5vh auto 5vh;
+   opacity: 0.7;
+   text-align: center;
+  }
+
+  .project-nav .prev,
+  .project-nav .next {
+    padding: 2vh 2vw 2vh;
+  }
+
+  .prev i {
+    padding-right: 0.5em;
+  }
+
+    .next i {
+    padding-left: 0.5em;
+  }
+
 /*--------------------------------END-*/
 
 /*--PROJECT PAGE----------------------*/
