@@ -100,6 +100,14 @@
     height: 0;
   }
 
+  .header img {
+    float: left;
+    height : 5.5vh;
+    vertical-align: text-bottom;
+    padding: 2vh 2vw 0;
+
+  }
+
   .nav-links {
     display: inline-block;
     float: right;
@@ -118,6 +126,7 @@
   .header-nav > li ~ li {
   border-left: 1px solid rgba(0, 0, 0, 0.7);
   }
+
 /*--------------------------------END-*/
 
 /*--SOCIAL STYLES---------------------*/
@@ -142,12 +151,12 @@
 
   .footer-strap h3 {
     font-size: 2vw;
+    left : 50%;
     opacity: 0.7;
-    text-align: center;
     padding: 1em;
     position: absolute;
+    text-align: center;
     top : 50%;
-    left : 50%;
     transform: translate(-50%, -50%)
   }
 
@@ -155,36 +164,37 @@
     display: inline-block;
     height : 80%;
   }
+
 /*--------------------------------END-*/
 
 /*--CALLOUT SECTION STYLES------------*/
   .callout-section {
     align-items: stretch;
     display: flex;
-    margin : 0 auto;
+    margin : 2vh auto 2vh;
     max-width: 800px;
     overflow: hidden;
-    padding: 15vh 15vw 5vh;
+    padding: 10vh 15vw 5vh;
   }
  
   .callout-title {
-    flex-grow: 1;
     flex-basis: 20vw;
+    flex-grow: 1;
     font-size: 5vw;
-    padding-right: 1vw;
     line-height: 0.8;
+    padding-right: 1vw;
     text-align: right;
   }
 
   .callout-copy {
+    flex-basis: 40vw;
     flex-grow: 1;
-   flex-basis: 40vw;
-   font-size: 2.25vw;
-   font-style: italic;
-   line-height: 1.25;
-   padding-left: 1vw;
-   text-align: left;
-   opacity: 0.7;
+    font-size: 2.25vw;
+    font-style: italic;
+    line-height: 1.1;
+    opacity: 0.7;
+    padding-left: 1vw;
+    text-align: left;
   }
 
   .callout-copy img {
@@ -209,12 +219,12 @@
     align-items: flex-start;
     display: flex;
     flex-direction: row; 
-    margin: 0 10vw;
+    margin: 2vh 10vw 2vh;
   }
 
   .project {
     flex :1;
-    margin: 4vh 1vw 0;
+    margin: 2vh 1vw 0;
   }
 
   .project-title h2 {
@@ -239,7 +249,7 @@
   .project-nav {
    font-size: 1.5vw;
    font-style: italic;
-   margin:  5vh auto 5vh;
+   margin:  10vh auto 10vh;
    opacity: 0.7;
    text-align: center;
   }
@@ -247,14 +257,15 @@
   .project-nav .prev,
   .project-nav .next {
     padding: 2vh 2vw 2vh;
+    font-size: 1.5vw;
   }
 
   .prev i {
-    padding-right: 0.5em;
+    padding-right: 1vw;
   }
 
-    .next i {
-    padding-left: 0.5em;
+  .next i {
+    padding-left: 1vw;
   }
 
 /*--------------------------------END-*/
@@ -270,7 +281,7 @@
 /* mobile portrait */
 @media (max-width: 450px){
   .callout-section {
-    padding: 8vh 2vw 2vh;
+    padding: 8vh 2vw 1vh;
   }
   .callout-title {
     flex-grow: 1;
@@ -280,14 +291,16 @@
   .callout-copy {
     flex-grow: 1;
     flex-basis: 55vw;
-    font-size: 4vw;
+    font-size: 5vw;
   }
   .main-section-projects {
     flex-direction: column;
   }
-/*  .project-title {
-    text-align: center;
-  }*/
+
+  .project {
+    margin: 1vh 1vw 0;
+  }
+
   .project-title h2 {
     display : inline-block;
     font-size: 4vh;
@@ -323,6 +336,15 @@
     float : none;
     height : 35px;
     padding : 0 0.5em;
+  }
+  .project-nav {
+   margin:  5vh auto 5vh;
+ }
+  
+  .project-nav .prev,
+  .project-nav .next {
+    padding: 2vh 2vw 2vh;
+    font-size: 5vw;
   }
 }
 /* mobile landscape */
