@@ -2,13 +2,13 @@
 <html>
 		<head>
   
-    <title>get in touch | s33d</title>
+    <title>Get in touch | s33d</title>
   
   
     <meta name="description" content="contact s33d to discuss your next project">
   
 
-    <meta property="og:title" content="get in touch | s33d"/>
+    <meta property="og:title" content="Get in touch | s33d"/>
     <meta property="og:type" content="website" />
     <meta property="og:locale" content="en" />
     <meta property="og:description" content="contact s33d to discuss your next project"/>
@@ -16,7 +16,7 @@
     <meta property="og:image" content="http://localhost:4000/apple-touch-icon.png"/>
     <link rel="canonical" href="http://s33d.co/" />
     <script type="application/ld+json">
-    {"description":"contact s33d to discuss your next project","@type":"WebSite","url":"http://localhost:4000","headline":"get in touch | s33d","@context":"http://schema.org"}</script>
+    {"description":"contact s33d to discuss your next project","@type":"WebSite","url":"http://localhost:4000","headline":"Get in touch | s33d","@context":"http://schema.org"}</script>
 
     <link href="/favicon.png" rel="icon">
     <link rel="apple-touch-icon" href="/apple-touch-icon.png">
@@ -54,7 +54,56 @@
 			</nav>
 </header>
  			<div class="content-container">
-				<div class="callout-section">
+				<script type="text/javascript">
+	function showRecaptcha(element) {
+  Recaptcha.create('6LfJh0gUAAAAAL7fuN6NMeTyw8Xvh_Kv0hgJRWTJ', element, {
+    theme: 'custom', // you can pick another at https://developers.google.com/recaptcha/docs/customization
+    custom_theme_widget: 'recaptcha_widget'
+  });
+}
+
+function setupRecaptcha() {
+  var contactFormHost = 'https://s33dcontact.herokuapp.com/',
+      form = $('#contact-form'),
+      notice = form.find('#notice');
+
+  if (form.length) {
+    showRecaptcha('recaptcha_widget');
+
+    form.submit(function(ev){
+      ev.preventDefault();
+
+      $.ajax({
+        type: 'POST',
+        url: contactFormHost + 'send_email',
+        data: form.serialize(),
+        dataType: 'json',
+        success: function(response) {
+          switch (response.message) {
+            case 'success':
+              form.fadeOut(function() {
+                form.html('<h4>' + form.data('success') + '</h4>').fadeIn();
+              });
+              break;
+
+            case 'failure_captcha':
+              showRecaptcha('recaptcha_widget');
+              notice.text(notice.data('captcha-failed')).fadeIn();
+              break;
+
+            case 'failure_email':
+              notice.text(notice.data('error')).fadeIn();
+          }
+        },
+        error: function(xhr, ajaxOptions, thrownError) {
+          notice.text(notice.data('error')).fadeIn();
+        }
+      });
+    });
+  }
+}
+</script>
+<div class="callout-section">
 	<div class="callout-title">
 		<h1>Get in touch</h1>
 	</div>
@@ -62,13 +111,33 @@
 		<h1>We don't bite, drop us a line - we'd love to hear from you.</h1>
 	</div>
 </div>
-<div class="bottom-two-thirds">
-	<div class="main-section">
-		<p>
-		PBR&B vaporware organic knausgaard art party forage brooklyn woke hell of offal lumbersexual vice plaid green juice sriracha. Pabst VHS letterpress heirloom yuccie. Semiotics bitters roof party cardigan. Kinfolk ugh biodiesel four loko vegan pabst health goth trust fund brunch ramps. Whatever retro tumeric poutine - try-hard cloud bread retro.
-		</p>
-	</div>
+
+<div class="main-section">
+	<form id="contact-form" class="contact-form" method="post" data-success="Message successfully sent!">
+
+	<label for="name">Name</label>
+	<input id="name" type="text" name="name" class="field" required autofocus /><br/>
+
+	<label for="email">E-mail</label>
+	<input id="email" type="email" name="email" class="field" required /><br/>
+
+	<label for="subject">Subject</label>
+	<input id="subject" type="text" name="subject" class="field" required /><br/>
+
+	<label for="message">Message</label>
+	<textarea id="message" name="message" required ></textarea><br/>
+
+	   <div class="g-recaptcha" data-sitekey="6LfJh0gUAAAAAL7fuN6NMeTyw8Xvh_Kv0hgJRWTJ"></div>
+      <br/>
+      <input type="submit" value="Submit">
+	</div><br/>
+	<div id="notice" class="notice" data-captcha-failed="Incorrect captcha!" data-error="There was an error sending the message, please try again."></div>
+	<button type="submit">Send</button>
+	</form>
+
+	<script type="text/javascript" src="http://www.google.com/recaptcha/api/js/recaptcha_ajax.js"></script>
 </div>
+
 
 
 			</div>
