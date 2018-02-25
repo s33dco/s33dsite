@@ -12,9 +12,14 @@
 
     <meta property="og:title" content="{{ page.title }} | s33d"/>
     <meta property="og:type" content="website" />
+    <meta property="og:locale" content="en" />
     <meta property="og:description" content="{{ page.description }}"/>
     <meta property="og:url" content="{{ site.url }}{{ page.url }}"/>
     <meta property="og:image" content="{{ site.url }}/apple-touch-icon.png"/>
+    <link rel="canonical" href="http://s33d.co/" />
+    <script type="application/ld+json">
+    {"description":"{{ page.description }}","@type":"WebSite","url":"{{ site.url }}","headline":"{{ page.title }} | s33d","@context":"http://schema.org"}</script>
+
     <link href="/favicon.png" rel="icon">
     <link rel="apple-touch-icon" href="/apple-touch-icon.png">
     <meta charset="utf-8">
@@ -23,9 +28,7 @@
     <link href="https://fonts.googleapis.com/css?family=Ubuntu:300i,500" rel="stylesheet">
     <link rel="stylesheet" href="/css/main.css">
 
- {% raw %}
-
+  {% raw %}
     {% seo %}
   {% endraw %}
-
 </head>
