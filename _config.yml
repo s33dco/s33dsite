@@ -1,4 +1,4 @@
-url: http://s33d.co
+url: "http://s33d.co"
 
 plugins:
   - jekyll-sitemap
