@@ -262,17 +262,11 @@
   }
 
   .project-nav {
-   font-size: 2.5vw;
+   font-size: 4vw;
    font-style: italic;
    margin:  10vh auto 10vh;
    opacity: 0.7;
    text-align: center;
-  }
-
-  .project-nav .prev,
-  .project-nav .next {
-    padding: 2vh 2vw 2vh;
-    font-size: 2.5vw;
   }
 
   .prev i {
@@ -293,9 +287,6 @@
 
 @media (max-width: 800px){
 
-  .header ing {
-    height : 50px;
-  }
 
   .callout-section {
     padding: 8vh 5vw 0;
@@ -331,23 +322,41 @@
   .social-list > li {
     display: inline-block;
     float : none;
-    height : 50px;
+    height : 45px;
     padding : 0 0.75em 0.5em;
   }
   .project-title h2 {
     display : inline-block;
-    font-size: 3.5vh;
+    font-size: 4vh;
   }
   .project .links {
     display : inline-block;
-    height: 3.5vh;
+    height: 4vh;
   }
-
   .project .links img {
     display : inline-block;
     height: 100%;
     vertical-align: top;
   }
+  .project-nav {
+   font-size: 5vw;
+   font-style: italic;
+   margin:  10vh auto 10vh;
+   opacity: 0.7;
+   text-align: center;
+  }
+
+  .project-nav a {
+    padding : 0 2vw;
+  }
+  .prev i {
+    padding-right: 1vw;
+  }
+
+  .next i {
+    padding-left: 1vw;
+  }
+
 }
 /* large displays*/
 @media (min-width: 1400px) {
