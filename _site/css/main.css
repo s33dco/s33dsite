@@ -320,8 +320,8 @@
   .social-list > li {
     display: inline-block;
     float : none;
-    height : 45px;
-    padding : 0 0.75em 0.5em;
+    height : 40px;
+    padding : 0 0.75em 0;
   }
   .project-title h2 {
     display : inline-block;
