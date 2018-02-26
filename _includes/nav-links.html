@@ -1,15 +1,9 @@
 <li class='{% if page.url=="/" %}active{% endif %}'>
-	<a href="/">
-		Home
-	</a>
+	<a href="/">Home</a>
 </li>
-<li class='{% if page.url=="/projects/"%}active{% endif %}'>
-	<a href="/projects">
-		Projects
-	</a>
+<li class='{% if page.url=="/projects/" or page.active=="projects" %}active{% endif %}'>
+	<a href="/projects">Projects</a>
 </li>
 <li class='{% if page.url=="/contact/" %}active{% endif %}'>
-	<a href="/contact">
-		Contact
-	</a>
+	<a href="/contact">Contact</a>
 </li>
