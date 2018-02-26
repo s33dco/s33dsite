@@ -1,4 +1,5 @@
 url: "http://s33d.co"
+timezome: Europe/London
 
 plugins:
   - jekyll-sitemap

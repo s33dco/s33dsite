@@ -127,6 +127,11 @@
   border-left: 1px solid rgba(0, 0, 0, 0.7);
   }
 
+  .header-nav li.active a{
+    font-style: bold;
+    color: red;
+  }
+
 /*--------------------------------END-*/
 
 /*--SOCIAL STYLES---------------------*/
@@ -162,7 +167,7 @@
 
   .footer-strap img {
     display: inline-block;
-    height : 80%;
+    height : 90%;
   }
 
 /*--------------------------------END-*/
@@ -280,18 +285,20 @@
 
 /*--------------------------------END-*/
 
-/*--PROJECT PAGE----------------------*/
-
-/*--------------------------------END-*/
 
 /*--RWD--------------------*/
 
 
+/* mobile */
 
-/* mobile portrait */
-@media (max-width: 450px){
+@media (max-width: 800px){
+
+  .header ing {
+    height : 50px;
+  }
+
   .callout-section {
-    padding: 8vh 2vw 1vh;
+    padding: 8vh 5vw 0;
   }
   .callout-title {
     flex-grow: 1;
@@ -306,65 +313,12 @@
   .main-section-projects {
     flex-direction: column;
   }
-
-  .project {
-    margin: 1vh 1vw 0;
-  }
-
-  .project-title h2 {
-    display : inline-block;
-    font-size: 4vh;
-  }
-  .project .links {
-    display : inline-block;
-    height: 4vh;
-  }
-
-  .project .links img {
-    display : inline-block;
-    height: 100%;
-    vertical-align: top;
-  }
-
   p {
-    font-size: 1.1em;
+  font-size: 1.1em;
   }
   .footer-strap h3 {
     display: block;
-    font-size: 6vw;
-    text-align: center;
-    padding-top: 1em;
-    padding-bottom: 0;
-    position: relative;
-  }
-  ul.in-footer.social-list {
-    margin-top: -0.5em;
-    text-align: center;
-  }
-  .social-list > li {
-    display: inline-block;
-    float : none;
-    height : 35px;
-    padding : 0 0.5em;
-  }
-  .project-nav {
-   margin:  5vh auto 5vh;
- }
-  
-  .project-nav .prev,
-  .project-nav .next {
-    padding: 2vh 2vw 2vh;
     font-size: 5vw;
-  }
-}
-/* mobile landscape */
-@media (max-width: 800px){
-  .main-section-projects {
-    flex-direction: column;
-  }
-  .footer-strap h3 {
-    display: block;
-    font-size: 2.25vw;
     text-align: center;
     padding-top: 1em;
     padding-bottom: 0;
@@ -377,8 +331,8 @@
   .social-list > li {
     display: inline-block;
     float : none;
-    height : 35px;
-    padding : 0 0.5em;
+    height : 50px;
+    padding : 0 0.75em 0.5em;
   }
   .project-title h2 {
     display : inline-block;

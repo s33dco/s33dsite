@@ -16,7 +16,7 @@
     <meta property="og:image" content="http://localhost:4000/apple-touch-icon.png"/>
     <link rel="canonical" href="http://s33d.co/" />
     <script type="application/ld+json">
-    {"description":"contact s33d to discuss your next project","@type":"WebSite","url":"http://localhost:4000","headline":"Get in touch | s33d","@context":"http://schema.org"}</script>
+    {"description":"contact s33d to discuss your next project","@type":"WebSite","url":"http://localhost:4000/contact/","headline":"Get in touch | s33d","@context":"http://schema.org"}</script>
 
     <link href="/favicon.png" rel="icon">
     <link rel="apple-touch-icon" href="/apple-touch-icon.png">
@@ -35,17 +35,17 @@
 	</a>
 			<nav>
 				<ul class="header-nav nav-links">
-				  <li>
+				  <li class=''>
 	<a href="/">
 		Home
 	</a>
 </li>
-<li>
+<li class=''>
 	<a href="/projects">
 		Projects
 	</a>
 </li>
-<li>
+<li class='active'>
 	<a href="/contact">
 		Contact
 	</a>
@@ -54,56 +54,7 @@
 			</nav>
 </header>
  			<div class="content-container">
-				<script type="text/javascript">
-	function showRecaptcha(element) {
-  Recaptcha.create('6LfJh0gUAAAAAL7fuN6NMeTyw8Xvh_Kv0hgJRWTJ', element, {
-    theme: 'custom', // you can pick another at https://developers.google.com/recaptcha/docs/customization
-    custom_theme_widget: 'recaptcha_widget'
-  });
-}
-
-function setupRecaptcha() {
-  var contactFormHost = 'https://s33dcontact.herokuapp.com/',
-      form = $('#contact-form'),
-      notice = form.find('#notice');
-
-  if (form.length) {
-    showRecaptcha('recaptcha_widget');
-
-    form.submit(function(ev){
-      ev.preventDefault();
-
-      $.ajax({
-        type: 'POST',
-        url: contactFormHost + 'send_email',
-        data: form.serialize(),
-        dataType: 'json',
-        success: function(response) {
-          switch (response.message) {
-            case 'success':
-              form.fadeOut(function() {
-                form.html('<h4>' + form.data('success') + '</h4>').fadeIn();
-              });
-              break;
-
-            case 'failure_captcha':
-              showRecaptcha('recaptcha_widget');
-              notice.text(notice.data('captcha-failed')).fadeIn();
-              break;
-
-            case 'failure_email':
-              notice.text(notice.data('error')).fadeIn();
-          }
-        },
-        error: function(xhr, ajaxOptions, thrownError) {
-          notice.text(notice.data('error')).fadeIn();
-        }
-      });
-    });
-  }
-}
-</script>
-<div class="callout-section">
+				<div class="callout-section">
 	<div class="callout-title">
 		<h1>Get in touch</h1>
 	</div>
@@ -113,29 +64,7 @@ function setupRecaptcha() {
 </div>
 
 <div class="main-section">
-	<form id="contact-form" class="contact-form" method="post" data-success="Message successfully sent!">
 
-	<label for="name">Name</label>
-	<input id="name" type="text" name="name" class="field" required autofocus /><br/>
-
-	<label for="email">E-mail</label>
-	<input id="email" type="email" name="email" class="field" required /><br/>
-
-	<label for="subject">Subject</label>
-	<input id="subject" type="text" name="subject" class="field" required /><br/>
-
-	<label for="message">Message</label>
-	<textarea id="message" name="message" required ></textarea><br/>
-
-	   <div class="g-recaptcha" data-sitekey="6LfJh0gUAAAAAL7fuN6NMeTyw8Xvh_Kv0hgJRWTJ"></div>
-      <br/>
-      <input type="submit" value="Submit">
-	</div><br/>
-	<div id="notice" class="notice" data-captcha-failed="Incorrect captcha!" data-error="There was an error sending the message, please try again."></div>
-	<button type="submit">Send</button>
-	</form>
-
-	<script type="text/javascript" src="http://www.google.com/recaptcha/api/js/recaptcha_ajax.js"></script>
 </div>
 
 
@@ -144,7 +73,7 @@ function setupRecaptcha() {
 		 		<footer class="footer">
 	<div class="footer-strap">
 
-		<h3><span>develop and grow</span> with s33d</h3>
+		<h3>develop and grow with s33d</h3>
 		<ul class="in-footer social-list">
 			<li>
 	<a href="https://twitter.com/s33dco" class="social-link">
