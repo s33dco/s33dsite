@@ -25,6 +25,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="https://fonts.googleapis.com/css?family=Ubuntu:300i,500" rel="stylesheet">
     <link rel="stylesheet" href="/css/main.css">
+    <script src='https://www.google.com/recaptcha/api.js'></script>
 </head>
   <body>
  
@@ -59,22 +60,25 @@
 
 <div class="main-section">
 	
-	<form name="contact" method="POST" action="/thanks/" netlify>
-	  <p>
-	    <label>What's your name ?<input type="text" name="name"></label>   
-	  </p>
-	  <p>
-	    <label>Your email address ?<input type="email" name="email"></label>
-	  </p>
-	  <p>
-	    <label>What's on your mind ?<textarea name="message"></textarea></label>
-	  </p>
-	  <div netlify-recaptcha></div>
-	  <p>
-	    <button type="submit">Send</button>
-	  </p>
-	</form>
-	<a href="/thanks">thanks page</a>
+<form action="https://s33dcontact.herokuapp.com/send_email" method="POST">
+	<div class="form-group">
+		<input type="text" name="name" class="form-control" placeholder="What's your name?" required>
+	</div>
+	<div class="form-group">
+		<input type="email" name="email" class="form-control" placeholder="Your E-mail" required>
+	</div>
+	<div class="form-group">
+		<input type="text" name="subject" class="form-control" placeholder="Subject" required>
+	</div>
+	<div class="form-group">
+		<textarea class="form-control" name="message" rows="7" placeholder="Message" required>
+		</textarea>
+	</div>
+	<div class="g-recaptcha" data-sitekey="6LfJh0gUAAAAAL7fuN6NMeTyw8Xvh_Kv0hgJRWTJ"></div>
+	<div class="text-center">
+		<input type="submit" value="Submit" class="btn btn-primary">
+	</div>
+</form>
 
 </div>
 
