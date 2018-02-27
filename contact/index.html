@@ -2,6 +2,7 @@
 layout: default
 title: Get in touch
 description: contact s33d to discuss your next project
+email: code@s33d.co
 ---
 <div class="callout-section">
 	<div class="callout-title">
@@ -13,6 +14,23 @@ description: contact s33d to discuss your next project
 </div>
 
 <div class="main-section">
+	
+	<form name="contact" netlify-honeypot="bot-field" method="POST" action="/thanks/index.html" netlify>
+	  <p>
+	    <label>What's your name ?<input type="text" name="name"></label>   
+	  </p>
+	  <p>
+	    <label>Your email address ?<input type="email" name="email"></label>
+	  </p>
+	  <p>
+	    <label>What's on your mind ?<textarea name="message"></textarea></label>
+	  </p>
+	  <div netlify-recaptcha></div>
+	  <p>
+	    <button type="submit">Send</button>
+	  </p>
+	</form>
+	<a href="/thanks">thanks page</a>
 
 </div>
 
