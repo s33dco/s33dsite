@@ -128,8 +128,7 @@
   }
 
   .header-nav li.active a{
-    font-style: bold;
-    color: red;
+    color: teal;
   }
 
 /*--------------------------------END-*/

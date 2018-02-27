@@ -1,7 +1,7 @@
 <li class='{% if page.url=="/" %}active{% endif %}'>
 	<a href="/">Home</a>
 </li>
-<li class='{% if page.url=="/projects/" or page.active=="projects" %}active{% endif %}'>
+<li class='{% if page.url contains "projects" %}active{% endif %}'>
 	<a href="/projects">Projects</a>
 </li>
 <li class='{% if page.url=="/contact/" %}active{% endif %}'>
