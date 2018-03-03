@@ -394,17 +394,18 @@
 .form-control {
   background-color: #eee;
   border-radius: 10px;
-  font-size: 1.1em;
-  padding : 0.5em 1em;
+  font-size: 0.75em;
+  padding : 0.25em 0;
   text-align: center;
-  width: 60vw;
+  width: 50vw;
 }
 .btn {
-  width: 35vw;
+  margin-top: 5vh;
+  width: 20vw;
 }
 
 .contact-form {
-  margin-top: 5vh;
+  margin: 6vh 1vw;
 }
 /* large displays*/
 @media (min-width: 1400px) {
