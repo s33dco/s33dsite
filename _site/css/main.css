@@ -280,6 +280,10 @@
 
 /*---contact form-----------*/
 
+.contact-form {
+  margin-top: 2vh;
+}
+
 .form-group{
   margin: 1vh auto;
   text-align: center;
@@ -291,7 +295,10 @@
   font-size: 1.1em;
   padding : 0.5em 1em;
   text-align: center;
-  width: 30vw;
+  width: 20vw;
+}
+.btn {
+  width: 10vw;
 }
 
 ::-webkit-input-placeholder { /* Chrome/Opera/Safari */
@@ -382,6 +389,22 @@
   .next i {
     padding-left: 1vw;
   }
+}
+
+.form-control {
+  background-color: #eee;
+  border-radius: 10px;
+  font-size: 1.1em;
+  padding : 0.5em 1em;
+  text-align: center;
+  width: 60vw;
+}
+.btn {
+  width: 35vw;
+}
+
+.contact-form {
+  margin-top: 5vh;
 }
 /* large displays*/
 @media (min-width: 1400px) {
