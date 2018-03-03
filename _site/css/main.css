@@ -278,7 +278,36 @@
     padding-left: 1vw;
   }
 
-/*--------------------------------END-*/
+/*---contact form-----------*/
+
+.form-group{
+  margin: 1vh auto;
+  text-align: center;
+}
+
+.form-control {
+  background-color: #eee;
+  border-radius: 10px;
+  font-size: 1.1em;
+  padding : 0.5em 1em;
+  text-align: center;
+  width: 30vw;
+}
+
+::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  color: #000;
+}
+::-moz-placeholder { /* Firefox 19+ */
+  color: #000;
+}
+:-ms-input-placeholder { /* IE 10+ */
+  color: #000;
+}
+:-moz-placeholder { /* Firefox 18- */
+  color: #000;
+}
+
+
 
 
 /*--RWD--------------------*/
