@@ -19,26 +19,26 @@ description: Hand coded with heart
 			<div class="project-title">
 				<h2>
 					<a href="{{ project.url}}">{{ project.title }}</a>
-						<span class="links">
-							<img src="{{ project.langicon }}" alt="{{ project.title }} is written in {{ project.lang }}" >
-								<img"/images/gems.png" alt="{{ project.title }} available as a Ruby Gem"/>
-						{% if project.gem %}
-							<a href="{{ project.gem}}">
-								<img src="/images/gems.png" alt="{{ project.title }} available as a Ruby Gem"/>
-							</a>
-						{% endif %}
-						{% if project.repo %}
-							<a href="{{ project.repo}}">
-								<img src="/images/github.png" alt="{{ project.title }} source code available on GitHub"/>
-							</a>
-						{% endif %}
-						{% if project.site %}
-							<a href="{{ project.site}}">
-								<img src="/images/livesite.png" alt="{{ project.title }} test site"/>
-							</a>
-						{% endif %}
-						</span>
 				</h2>
+				<span class="links">
+					<img src="{{ project.langicon }}" alt="{{ project.title }} is written in {{ project.lang }}" >
+						<img"/images/gems.png" alt="{{ project.title }} available as a Ruby Gem"/>
+				{% if project.gem %}
+					<a href="{{ project.gem}}">
+						<img src="/images/gems.png" alt="{{ project.title }} available as a Ruby Gem"/>
+					</a>
+				{% endif %}
+				{% if project.repo %}
+					<a href="{{ project.repo}}">
+						<img src="/images/github.png" alt="{{ project.title }} source code available on GitHub"/>
+					</a>
+				{% endif %}
+				{% if project.site %}
+					<a href="{{ project.site}}">
+						<img src="/images/livesite.png" alt="{{ project.title }} test site"/>
+					</a>
+				{% endif %}
+				</span>
 			</div>
 			<div class="excerpt">
 				{{ project.excerpt }}
