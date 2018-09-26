@@ -242,7 +242,7 @@
   }
 
   .project-title h2 {
-    display : inline-block;
+    display : block;
     font-size: 4vh;
   }
   .project .links {
