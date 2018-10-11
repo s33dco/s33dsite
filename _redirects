@@ -1,0 +1,2 @@
+# Redirect default Netlify subdomain to primary domain
+https://amazing-villani-47d374.netlify.com/* https://www.s33d.co/:splat 301!
