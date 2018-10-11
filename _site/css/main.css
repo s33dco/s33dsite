@@ -233,12 +233,15 @@
     align-items: flex-start;
     display: flex;
     flex-direction: row; 
+    flex-wrap: wrap;
     margin: 2vh 10vw 2vh;
   }
 
   .project {
     flex :1;
     margin: 1vh 1vw 0;
+    min-width: 25%;
+    box-sizing: border-box;
   }
 
   .project-title h2 {
