@@ -51,7 +51,8 @@
 /*--GLOBAL STYLES---------------------*/
 
   body {
-
+    background:  #fcfcfc;
+    color: #191d32;
     display : flex;
     flex-direction: column;
     font-family: 'Ubuntu', sans-serif;
@@ -71,8 +72,14 @@
       width: 100%;
     }
 
-  a {
+  a:visited, a:link {
     text-decoration: none;
+    color: #540d6e;
+  }
+
+  a:hover {
+    text-decoration: none;
+    color: #bf4e30;
   }
 
   p {
@@ -84,7 +91,7 @@
 /*--HEADER STYLES---------------------*/
 
   .header {
-    background-color: #fff;
+    background: #fcfcfc;
     position: fixed;
     max-width: 960px;
     width: 100%; 
@@ -128,7 +135,7 @@
   }
 
   .header-nav li.active a{
-    color: teal;
+    color: #bf4e30;
   }
 
 /*--------------------------------END-*/
@@ -248,6 +255,11 @@
     display : block;
     font-size: 4vh;
   }
+
+  .project-title h2.project-name {
+  padding-bottom: 1vh;
+  }
+
   .project .links {
     display : inline-block;
     height: 4vh;
@@ -367,6 +379,7 @@
     display : inline-block;
     font-size: 4vh;
   }
+
   .project .links {
     display : inline-block;
     height: 4vh;
@@ -374,7 +387,7 @@
   .project .links img {
     display : inline-block;
     height: 100%;
-    vertical-align: top;
+    vertical-align: bottom;
   }
   .project-nav {
    font-size: 4vw;
