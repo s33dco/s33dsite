@@ -57,7 +57,7 @@
     flex-direction: column;
     font-family: 'Ubuntu', sans-serif;
     margin: 0 auto;
-    max-width: 960px;
+   /* max-width: 960px;*/
     min-height: 100vh;
   }
 
@@ -93,7 +93,7 @@
   .header {
     background: #fcfcfc;
     position: fixed;
-    max-width: 960px;
+  /*  max-width: 960px;*/
     width: 100%; 
     z-index: 20;
   }
@@ -115,11 +115,16 @@
 
   }
 
-  .nav-links {
-    display: inline-block;
-    float: right;
+  nav {
+    display: block;
+    text-align: right;
     line-height: 1;
-    margin: 2vh 2vw;
+    margin-top: 3vh;
+    width: 100%;
+  }
+
+  ul.header-nav.nav-links {
+    padding-right: 2vw;
   }
 
   .header-nav > li{
@@ -247,13 +252,12 @@
   .project {
     flex :1;
     margin: 1vh 1vw 0;
-    min-width: 25%;
-    box-sizing: border-box;
   }
 
   .project-title h2 {
     display : block;
     font-size: 4vh;
+    width : 18vw;
   }
 
   .project-title h2.project-name {
@@ -378,6 +382,7 @@
   .project-title h2 {
     display : inline-block;
     font-size: 4vh;
+    width : 80vw;
   }
 
   .project .links {
